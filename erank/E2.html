@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- CSS styling for the website -->
+<style>
+ /* CSS styling for the website */
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 100px;
+    }
+  
+    .onepage-pagination {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.onepage-pagination li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.onepage-pagination li a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+}
+
+.onepage-pagination li a.active {
+  background-color: #000000;
+}
+.onepage-pagination li a:hover {
+    background-color: red; /* Circle color on hover */
+}
+
+    header {
+      background-color: #000000;
+      padding: 10px;
+      text-align: center;
+      font-size: 22px;
+    }
+    .title{
+      color:white;
+    }
+   
+    /* <!-- Img--> */
+    .rounded{
+        border-radius: 0%;
+        margin-top: 10px;
+        margin-left: 500px;
+        color: white;
+    }
+    img {
+  width: 20%;
+  height: auto;
+  margin-left: 35px;
+  padding-top: 20px;
+  margin-top: 10px
+}
+.text-center{
+    text-align: left;
+    padding-top: -20px;
+}
+      main {
+        padding: 10px;
+      }
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 11px;
+        text-align: center;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 22px;
+      }
+      .dashboard a:hover {
+        color: red;
+        /* Add any other styles you want for the hover effect */
+    }
+
+   
+    </style>
+
+
+ <!-- HTMl -->
+<html>
+    <head>
+        <title>E Rank 1</title>
+        <link rel="stylesheet" type="text/css" href="scraper.py">
+        <link rel="stylesheet" type="text" href="app.py">
+    </head>
+    <body class="viewping-page-2">
+         <!-- SIde Bar-->
+    <ul class="onepage-pagination">
+        <li><a data-index="1" href="E1.html" class="active"></a></li>
+        <li><a data-index="2" href="" class="active"></a></li>
+        <li><a data-index="3" href="#3" class="active"></a></li>
+        <li><a data-index="4" href="#4" class="active"></a></li>
+        <li><a data-index="5" href="#5" class="active"></a></li>
+    </ul>
+    <div class="main onepage-wrapper" style="position: relative; transform: translate3d(0px, 0%, 0px); 
+    transition: all 1000ms ease 0s;"></div>
+    
+     <header>
+        <div class="image">
+            <div class="text-center">
+                <img src="/Users/dp/Desktop/E Rank 1/erank/Ess.png" class="rounded" alt="...">
+            </div>
+        </div>
+          <!-- Title -->
+          <div class="title">
+            <p>India's First App for only <a style="color: rgb(0, 0, 255);"><b>E-Sports</b></a> Fantasy
+                Team.</p>
+          </div>
+      </header>
+      <!-- Redirection List -->
+
+      <div id="tournament-data"></div>
+      <script src="scraper.py"></script>
+      
+    </body>
+</html>
